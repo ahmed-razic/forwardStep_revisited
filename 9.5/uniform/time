@@ -9,11 +9,22 @@ FoamFile
 {
     format      ascii;
     class       dictionary;
-    location    "constant";
-    object      momentumTransport;
+    location    "9.5/uniform";
+    object      time;
 }
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * /
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-simulationType  laminar;
+beginTime       0;
+
+value           9.4999999999998419;
+
+name            "9.5";
+
+index           4750;
+
+deltaT          0.002;
+
+deltaT0         0.002;
+
 
 // ************************************************************************* //
